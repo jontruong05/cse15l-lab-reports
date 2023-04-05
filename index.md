@@ -1,13 +1,13 @@
-*Jonathan*
+*Jonathan*. 
 **Jonathan**
 # Jonathan
 ## Jonathan
 [Link](http://google.com)
 ![Image]()
-> Something super interesting and philosophical :D
+> Something super interesting and philosophical :D. 
 * a
 * b
-* c
+* c. 
 1. one
 2. two
 3. three
