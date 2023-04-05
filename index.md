@@ -3,8 +3,9 @@
 **Jonathan**
 # Jonathan
 ## Jonathan
-[Link](http://google.com)
-![Image]()
+[Click here to make an interesting Google search :)](http://google.com)  
+
+![a dead image link]()
 > Something super interesting and philosophical :D. 
 * a
 * b
