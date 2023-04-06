@@ -10,3 +10,4 @@ Here's an example of what it should look like if you are on a Mac:
 
 Click on the downloaded zip folder. It should take you to your downloaded folders, where you will see an application named "Visual Studio Code". Open it up, and it should look something like this upon startup:  
 
+![Image](step2.png)
