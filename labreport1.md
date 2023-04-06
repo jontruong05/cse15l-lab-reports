@@ -1,3 +1,5 @@
 # Lab Report 1
 
-This is the start of lab report 1. :D
+This lab report will demonstrate how to log into a course-specific account on `ieng6`.  
+
+First, we will need to download VSCode. Click [here](https://code.visualstudio.com/download) to go to the download site for VSCode. Be sure to download the one that corresponds with your operating system!
