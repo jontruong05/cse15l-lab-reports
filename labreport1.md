@@ -24,7 +24,11 @@ Once you've typed in your password, hit Enter. Your terminal should look somethi
 
 ## Trying Some Commands
 
-At this point, we can start typing in some commands in the command line. Here's a snapshot of 4 examples (`ls`, `pwd`, `cat /home/linux/ieng6/cs15lsp23/public/hello.txt`, and `ls -a`):
+At this point, we can start typing in some commands in the command line. The four examples shown in the screenshot below are as follows:
+* `ls`, which prints out all items in the current directory. In this case, there's a file called "perl5". 
+* `pwd`, which prints out the absolute file path on the remote computer. 
+* `cat /home/linux/ieng6/cs15lsp23/public/hello.txt`, which attempts to print out the contents from a text file called "hello.txt". Unfortunately, the terminal is saying that "hello.txt" doesn't exist.
+* `ls -a`, which prints out all files, including ones that start with ".". 
 
 ![Image](step4.png)
 
