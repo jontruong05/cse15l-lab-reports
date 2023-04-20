@@ -16,7 +16,7 @@ Click on the downloaded zip folder. It should take you to your downloaded folder
 
 ## Remotely Connecting
 
-Click on "Terminal" on the top left bar, and then click "New Terminal". Inside the terminal, type "ssh [your-cse15l-username]@ieng6.ucsd.edu", where [your-cse15l-username] should be replaced with your CSE 15L username. The terminal will prompt you to enter your password. Be sure to type it in carefully, as you will not be able to see what you are typing. 
+Click on "Terminal" on the top left bar, and then click "New Terminal". Inside the terminal, type `ssh [your-cse15l-username]@ieng6.ucsd.edu`, where `[your-cse15l-username]` should be replaced with your CSE 15L username. The terminal will prompt you to enter your password. Be sure to type it in carefully, as you will not be able to see what you are typing. 
 
 Once you've typed in your password, hit Enter. Your terminal should look something like this:  
 
