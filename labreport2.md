@@ -18,7 +18,13 @@ And this following screenshot corresponds to `/add-message?s=How are you`:
 
 ![Image](:add-message?s=How are you.png)
 
+For the previous two requests, the `handleRequest()` method is called upon in the `Handler` class. It takes a `URI` as the argument, which contains the path and query of the request. The if statement in the `handleRequest()` method checks for the contents in the path and the query--if the path has `/add-message` and the query has `s=`, then the server will proceed to add the string that follows the `s=` to the ArrayList named `strList`. 
+
+The else statement runs for any other values of the path or query. What happens is that there is a for loop that will iterate through `strList`, and concatenate each element in it to the String named `str`. Note that `str` is only available within the else statement. Once the for loop finishes iterating through `strList`, `str` will be printed onto the page. 
+
 At this point, the `StringServer` page should show:
+
+![Image](StringServer page.png)
 
 
 
