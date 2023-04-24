@@ -54,5 +54,38 @@ static void reverseInPlace(int[] arr) {
 ```
 The issue with this method is that the first element in the array, which is 1, is set to be equal to the last element in the array, which is 5. However, once the for loop finishes iterating through the entire array, the original value of the first element is lost, so the last element (which is 5) never changes because it is set to be equal to the first element in the array, which is 5 because it has changed. This is the same for the second element--it gets set to the value at index 3 (which is 4), but the value at index three will remain unchanged because it is set to be equal to the second element, which is 4 because it has changed. This explains the error message: the method actually changes `{1, 2, 3, 4, 5}` to `{5, 4, 3, 4, 5}`. The first three elements are correct as expected, but the failure message marks the first occurrence of the error at index 3. It is expected that the value at index 3 should be 2, but the error message says that the value at index 3 after calling the `reverseInPlace()` method is actually 4. 
 
+The following code is a test method that is NOT a failure-inducing input:
+
+```
+@Test
+public void testReverseInPlace() {
+  int[] input1 = { 3 };
+  ArrayExamples.reverseInPlace(input1);
+  assertArrayEquals(new int[]{ 3 }, input1);
+}
+```
+And the following screenshot is the test result for the test above: 
+
+![Image](no failure.png)
+
+This test doesn't fail because since `input1` is a one-element array, the code is essentially setting it equal to itself, which doesn't help us much and it doesn't weed out any bugs. 
+
+Now, compare the following code to the original code for `reverseInPlace()` above:
+
+```
+static void reverseInPlace(int[] arr) {
+  for(int i = 0; i < arr.length / 2; i += 1) {
+    int num = arr[i];
+    arr[i] = arr[arr.length - i - 1];
+    arr[arr.length - i - 1] = num;
+  }
+}
+```
+
+A code statement has been added before and after `arr[i] = arr[arr.length - i - 1];`. The purpose of those lines is to prevent the original elements in the array from being lost when they get changed. As a result, what was originally a failure-inducing input no longer produces a failure: 
+
+![Image](all5Tests.png)
 
 ## Part 3
+
+I've known for some time that Java has some connection with the development of websites, such as applets, but I never knew how they could be implemented. Observing how `NumberServer.java` works and creating a simple search engine expanded my knowledge on how website creation and maintenance are linked to Java. 
