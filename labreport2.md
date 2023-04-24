@@ -4,7 +4,13 @@ This lab report consists of three parts. Part 1 will discuss the implemetation o
 
 ## Part 1
 
-The `StringServer.java` file looks like this: 
+The implementation of the `StringServer.java` file looks like this: 
+
+![Image](StringServer source code.png)
+
+When a server request takes the form `/add-message?s=<string>`, the string that follows the `=` will be added to an ArrayList of strings. The page will also display a message "Value added!" to signal that a string has been added to the ArrayList. 
+
+The following two screenshots will demonstrate this type of request in action. The follow screenshot corresponds to `/add-message?s=Hello`:
 
 
 
