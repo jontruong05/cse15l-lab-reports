@@ -12,7 +12,11 @@ When a server request takes the form `/add-message?s=<string>`, the string that 
 
 The following two screenshots will demonstrate this type of request in action. The follow screenshot corresponds to `/add-message?s=Hello`:
 
+![Image](:add-message?s=Hello.png)
 
+And this following screenshot corresponds to `/add-message?s=How are you`:
+
+![Image](:add-message?s=How are you.png)
 
 ## Part 2
 
