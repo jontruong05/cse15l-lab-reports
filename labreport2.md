@@ -18,6 +18,10 @@ And this following screenshot corresponds to `/add-message?s=How are you`:
 
 ![Image](:add-message?s=How are you.png)
 
+At this point, the `StringServer` page should show:
+
+
+
 ## Part 2
 
 
