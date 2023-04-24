@@ -30,13 +30,13 @@ At this point, the `StringServer` page should show:
 
 We will observe the method testing of `reverseInPlace()` in `ArrayExamples.java`. The following code snippet is a test method for `reverseInPlace()`:
 
-`
+```
 @Test
   public void testOtherReverseInPlace() {
     int[] intArr = {1, 2, 3, 4, 5};
     ArrayExamples.reverseInPlace(intArr);
     assertArrayEquals(new int[] {5, 4, 3, 2, 1}, intArr);
   }
-`
+```
 
 ## Part 3
