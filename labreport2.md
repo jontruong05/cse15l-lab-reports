@@ -28,15 +28,31 @@ At this point, the `StringServer` page should show:
 
 ## Part 2
 
-We will observe the method testing of `reverseInPlace()` in `ArrayExamples.java`. The following code snippet is a test method for `reverseInPlace()`:
+We will observe the method testing of `reverseInPlace()` in `ArrayExamples.java`. The following code is a test method for `reverseInPlace()`:
 
 ```
 @Test
-  public void testOtherReverseInPlace() {
-    int[] intArr = {1, 2, 3, 4, 5};
-    ArrayExamples.reverseInPlace(intArr);
-    assertArrayEquals(new int[] {5, 4, 3, 2, 1}, intArr);
-  }
+public void testOtherReverseInPlace() {
+  int[] intArr = {1, 2, 3, 4, 5};
+  ArrayExamples.reverseInPlace(intArr);
+  assertArrayEquals(new int[] {5, 4, 3, 2, 1}, intArr);
+}
 ```
+
+The input is the integer array `{1, 2, 3, 4, 5}`, and it is expected that `reverseInPlace()` will change it to `{5, 4, 3, 2, 1}`. However, this is a failure-inducing input, as the following message appears:
+
+![Image](reverseInPlace() method test.png)
+
+The following is the original `reverseInPlace()` method:
+
+```
+static void reverseInPlace(int[] arr) {
+  for(int i = 0; i < arr.length; i += 1) {
+    arr[i] = arr[arr.length - i - 1];
+  }
+}
+```
+The issue with this method is that the first element in the array, which is 1, is set to be equal to the last element in the array, which is 5. However, once the for loop finishes iterating through the entire array, the original value of the first element is lost, so the last element (which is 5) never changes because it is set to be equal to the first element in the array, which is 5 because it has changed. This is the same for the second element--it gets set to the value at index 3 (which is 4), but the value at index three will remain unchanged because it is set to be equal to the second element, which is 4 because it has changed. This explains the error message: the method actually changes `{1, 2, 3, 4, 5}` to `{5, 4, 3, 4, 5}`. The first three elements are correct as expected, but the failure message marks the first occurrence of the error at index 3. It is expected that the value at index 3 should be 2, but the error message says that the value at index 3 after calling the `reverseInPlace()` method is actually 4. 
+
 
 ## Part 3
