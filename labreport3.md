@@ -24,3 +24,16 @@ The command searched throughout `1471-2148-1-14.txt` and determined that there w
 
 ![Image](grep-i.png)
 
+So even though the keyword is `POLAR`, lines that contain `polar` are still printed.
+
+## grep -R
+
+`grep -R` is a `grep` alternate that searches through the current directory and its subdirectories for files that contain a specified keyword. It takes the form `grep -R [key-word] .`. After switching the current directory to `technical`, I typed the command `grep -R "genome sequencing" .` and got: 
+
+![Image](grep-R.png)
+
+The command lists out the relative paths of the files that contain the keyword "genome sequencing" and prints out the lines that contain "genome sequencing". 
+
+## Linked Used
+
+The following is the link I used to discover alternates of the `grep` command: https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/ 
