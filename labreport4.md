@@ -105,7 +105,7 @@ Keys pressed for `git commit` command: `git<space>commit-m<shift+'>updated<shift
 
 Keys pressed for `git push` command: `git<space>push<space><Command+v><space>main<enter>`
 
-(Note: `<Command+v>`  for the `git push` command refers to pasting `[Link](git@github.com:jontruong05/lab7.git/)`.)
+(Note: `<Command+v>`  for the `git push` command refers to pasting `git@github.com:jontruong05/lab7.git/`.)
 
 A change was only made to `ListExamples.java`, so let's confirm that it has been changed on the GitHub site:
 
