@@ -14,7 +14,7 @@ First, we will log into the `ieng6` account. Note that this time, the terminal i
 
 ![Image](ieng6login.png)
 
-Keys pressed: s s h (space) c s 1 5 l s p 2 3 q q (shift-2) i e n g 6 . u c s d . e d u (enter)
+Keys pressed: `ssh<space>cs15lsp23qq<shift-2>ieng6.ucsd.edu<enter>`
 
 ## Step 2
 
