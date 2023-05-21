@@ -23,6 +23,7 @@ Now that we're logged in, let's clone this repository on GitHub: https://github.
 ![Image](gitclonelab7.png)
 
 Keys pressed: `git<space>clone<space><Command+v><enter>ls<enter>`
+
 Note: `<Command+v>` refers to pasting the link to the GitHub repository (https://github.com/ucsd-cse15l-s23/lab7.git), so be sure to copy the link first and then pasting it into the terminal. 
 
 ## Step 3
@@ -38,6 +39,7 @@ Next, we will compile `ListExamples.java` and `ListExamplesTests.java` simultane
 ![Image](compile.png)
 
 Keys pressed: `javac<space><Command+v><space><shift+8>.java<enter>ls<enter>`
+
 Note: `<Command+v>` refers to pasting `-cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar`. 
 
 And finally, we show that there are errors in the tests using the `java` command:
@@ -45,6 +47,7 @@ And finally, we show that there are errors in the tests using the `java` command
 ![Image](failure.png)
 
 Keys pressed: `java<space><Command+v><space><shift+l>ist<shift+e>xamples<shift+t>ests<enter>`
+
 Note: `<Command+v>` refers to pasting `-cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore`. 
 
 ## Step 4
@@ -79,6 +82,7 @@ Let's try running the tests again:
 ![Image](success.png)
 
 Keys pressed: `<up><up><up><up><up><enter><up><up><up><enter>`
+
 Note: Things did not go perfectly when I ran the steps myself and I typed in a number of commands in between the commands discussed in this lab report. When using the up arrow, press it as many times as necessary until you see the `javac` and `java` command as seen in step 3 because it may not be exactly 5 times to find the `javac` command and exactly 3 times for the `java` command. And as always, run the `javac` command first, then the `java` command.
 
 Nice! There are no failures. 
