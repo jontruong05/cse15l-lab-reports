@@ -22,8 +22,8 @@ Now that we're logged in, let's clone this repository on GitHub: https://github.
 
 ![Image](gitclonelab7.png)
 
-Keys pressed: g i t (space) c l o n e (space) (Command+v) (enter) l s (enter) 
-Note: (Command+v) refers to pasting the link to the GitHub repository (https://github.com/ucsd-cse15l-s23/lab7.git), so be sure to copy the link first and then pasting it into the terminal. 
+Keys pressed: `git<space>clone<space><Command+v><enter>ls<enter>`
+Note: `<Command+v>` refers to pasting the link to the GitHub repository (https://github.com/ucsd-cse15l-s23/lab7.git), so be sure to copy the link first and then pasting it into the terminal. 
 
 ## Step 3
   
@@ -31,21 +31,21 @@ Now, we must show that by running the tests in the `.java` files, we get failure
   
 ![Image](cdlab7pwdls.png)
   
-Keys pressed: c d (space) l a b 7 (enter) p w d (enter) l s (enter)
+Keys pressed: `cd<space>lab7<enter>pwd<enter>ls<enter>`
 
 Next, we will compile `ListExamples.java` and `ListExamplesTests.java` simultaneously using the `javac` command:
 
 ![Image](compile.png)
 
-Keys pressed: j a v a c (space) (Command+v) (space) (shift+8) . j a v a (enter) l s (enter)
-Note: (Command+v) refers to pasting `-cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar`. 
+Keys pressed: `javac<space><Command+v><space><shift+8>.java<enter>ls<enter>`
+Note: `<Command+v>` refers to pasting `-cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar`. 
 
 And finally, we show that there are errors in the tests using the `java` command:
 
 ![Image](failure.png)
 
-Keys pressed: j a v a (space) (Command+v) (space) (shift+l) i s t (shift+e) x a m p l e s (shift+t) e s t s (enter)
-Note: (Command+v) refers to pasting `-cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore`. 
+Keys pressed: `java<space><Command+v><space><shift+l>ist<shift+e>xamples<shift+t>ests<enter>`
+Note: `<Command+v>` refers to pasting `-cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore`. 
 
 ## Step 4
 
@@ -57,7 +57,7 @@ After pressing enter, this is what the terminal should look like:
   
 ![Image](editListExamples.png)
   
-Keys pressed: v i m (space) (shift+l) i s t (shift+e) x a m p l e s . j a v a (enter)
+Keys pressed: `vim<space><shift+l>ist<shift+e>xamples.java<enter>`
 
 Now, type `/index1`, and press enter. What this does is that it searches through the file for the keyword `index1`. Then, do the following:
 1. Press n 9 times. This get us to the second occurence of `index1` in the third while loop. 
@@ -78,8 +78,8 @@ Let's try running the tests again:
 
 ![Image](success.png)
 
-Keys pressed: (up, 5x) (enter) (up, 3x) (enter) 
-Note: Things did not go perfectly when I ran the steps myself and I typed in a number of commands in between the commands discussed in this lab report. When using the up arrow, press it as many times as necessary until you see the `javac` and `java` command as seen in step 3. Run the `javac` command first, then the `java` command.
+Keys pressed: `<up><up><up><up><up><enter><up><up><up><enter>`
+Note: Things did not go perfectly when I ran the steps myself and I typed in a number of commands in between the commands discussed in this lab report. When using the up arrow, press it as many times as necessary until you see the `javac` and `java` command as seen in step 3 because it may not be exactly 5 times to find the `javac` command and exactly 3 times for the `java` command. And as always, run the `javac` command first, then the `java` command.
 
 Nice! There are no failures. 
 
@@ -97,8 +97,8 @@ Here is the result of the `git push` command:
 
 ![Image](gitpush.png)
 
-Keys pressed for `git commit` command: g i t <space> c o m m i t - m <shift+'> u p d a t e d <shift+'> <enter>
-Keys pressed for `git push` command: g i t <space> p u s h <space> <Command+v> <space> m a i n <enter>
+Keys pressed for `git commit` command: `git<space>commit-m<shift+'>updated<shift+'><enter>`
+Keys pressed for `git push` command: `git<space>push<space><Command+v><space>main<enter>`
 
 A change was only made to `ListExamples.java`, so let's confirm that it has been changed on the GitHub site:
 
