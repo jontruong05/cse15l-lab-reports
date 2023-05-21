@@ -22,7 +22,7 @@ Now that we're logged in, let's clone this repository on GitHub: https://github.
 
 ![Image](gitclonelab7.png)
 
-Keys pressed: g i t <space> c l o n e <space> <cmd+v> <enter> l s <enter> (<cmd+v> refers to pasting the link to the GitHub repository, so be sure to copy the link first and then pasting it into the terminal)
+Keys pressed: g i t <space> c l o n e <space> <Command+v> <enter> l s <enter> (<Command+v> refers to pasting the link to the GitHub repository, so be sure to copy the link first and then pasting it into the terminal)
 
 ## Step 3
   
@@ -36,13 +36,13 @@ Next, we will compile `ListExamples.java` and `ListExamplesTests.java` simultane
 
 ![Image](compile.png)
 
-Keys pressed: j a v a c <space> <cmd+v> <space> <shift+8> . j a v a <enter> l s <enter> (<cmd+v> refers to pasting this: -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar)
+Keys pressed: j a v a c <space> <Command+v> <space> <shift+8> . j a v a <enter> l s <enter> (<Command+v> refers to pasting this: -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar)
 
 And finally, we show that there are errors in the tests using the `java` command:
 
 ![Image](failure.png)
 
-Keys pressed: j a v a <space> <cmd+v> <space> <shift+l> i s t <shift+e> x a m p l e s <shift+t> e s t s <enter> (<cmd+v> refers to pasting this: -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore)
+Keys pressed: j a v a <space> <Command+v> <space> <shift+l> i s t <shift+e> x a m p l e s <shift+t> e s t s <enter> (<Command+v> refers to pasting this: -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore)
 
 ## Step 4
 
@@ -85,6 +85,14 @@ Now, it's time to commit and push our code to the GitHub account. For the git co
 
 ![Image](gitcommit.png)
 
-After the message pops up, type in `git push <URL> main`, where URL is the link to your repository. In this case, I will use https://github.com/jontruong05/lab7.git: 
+After the message pops up, type in `git push <URL> main`, where URL is the link to your repository. In this case, I will use the SSH key that is found here:
+  
+![Image](ssh.png)
+
+Here is the result of the `git push` command:
 
 ![Image](gitpush.png)
+
+Keys pressed for `git commit` command: g i t <space> c o m m i t - m <shift+'> u p d a t e d <shift+'> <enter>
+Keys pressed for `git push` command: g i t <space> p u s h <space> <Command+v> <space> m a i n <enter>
+
