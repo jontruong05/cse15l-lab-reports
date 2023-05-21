@@ -102,6 +102,7 @@ Here is the result of the `git push` command:
 ![Image](gitpush.png)
 
 Keys pressed for `git commit` command: `git<space>commit-m<shift+'>updated<shift+'><enter>`
+
 Keys pressed for `git push` command: `git<space>push<space><Command+v><space>main<enter>`
 
 A change was only made to `ListExamples.java`, so let's confirm that it has been changed on the GitHub site:
