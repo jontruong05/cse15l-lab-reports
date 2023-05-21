@@ -18,13 +18,13 @@ Keys pressed: `ssh<space>cs15lsp23qq<shift-2>ieng6.ucsd.edu<enter>`
 
 ## Step 2
 
-Now that we're logged in, let's clone this repository on GitHub: [Link]https://github.com/ucsd-cse15l-s23/lab7.git 
+Now that we're logged in, let's clone this repository on GitHub: https://github.com/ucsd-cse15l-s23/lab7.git/ 
 
 ![Image](gitclonelab7.png)
 
 Keys pressed: `git<space>clone<space><Command+v><enter>ls<enter>`
 
-(Note: `<Command+v>` refers to pasting the link to the GitHub repository ([Link]https://github.com/ucsd-cse15l-s23/lab7.git), so be sure to copy the link first and then pasting it into the terminal.)
+(Note: `<Command+v>` refers to pasting the link to the GitHub repository (https://github.com/ucsd-cse15l-s23/lab7.git/), so be sure to copy the link first and then pasting it into the terminal.)
 
 ## Step 3
   
@@ -105,7 +105,7 @@ Keys pressed for `git commit` command: `git<space>commit-m<shift+'>updated<shift
 
 Keys pressed for `git push` command: `git<space>push<space><Command+v><space>main<enter>`
 
-(Note: `<Command+v>  for the `git push` command refers to pasting `[Link]git@github.com:jontruong05/lab7.git`.)
+(Note: `<Command+v>  for the `git push` command refers to pasting `git@github.com:jontruong05/lab7.git/`.)
 
 A change was only made to `ListExamples.java`, so let's confirm that it has been changed on the GitHub site:
 
