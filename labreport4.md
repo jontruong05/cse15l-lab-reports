@@ -14,7 +14,7 @@ First, we will log into the `ieng6` account. Note that this time, the terminal i
 
 ![Image](ieng6login.png)
 
-Keys pressed: ssh<space>cs15lsp23qq<shift-2>ieng6.ucsd.edu<enter>
+Keys pressed: s s h <space> c s 1 5 l s p 2 3 q q <shift-2> i e n g 6 . u c s d . e d u <enter>
 
 ## Step 2
 
@@ -22,7 +22,7 @@ Now that we're logged in, let's clone this repository on GitHub: https://github.
 
 ![Image](gitclonelab7.png)
 
-Keys pressed: git<space>clone<space><cmd+v><enter>ls<enter> (<cmd+v> refers to pasting the link to the GitHub repository, so be sure to copy the link first and then pasting it into the terminal)
+Keys pressed: g i t <space> c l o n e <space> <cmd+v> <enter> l s <enter> (<cmd+v> refers to pasting the link to the GitHub repository, so be sure to copy the link first and then pasting it into the terminal)
 
 ## Step 3
   
@@ -30,19 +30,19 @@ Now, we must show that by running the tests in the `.java` files, we get failure
   
 ![Image](cdlab7pwdls.png)
   
-Keys pressed: cd<space>lab7<enter>pwd<enter>ls<enter>
-  
+Keys pressed: c d <space> l a b 7 <enter> p w d <enter> l s <enter>
+
 Next, we will compile `ListExamples.java` and `ListExamplesTests.java` simultaneously using the `javac` command:
 
 ![Image](compile.png)
 
-Keys pressed: javac<space><cmd+v><space><shift+8>.java<enter>ls<enter> (<cmd+v> refers to pasting this: -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar)
+Keys pressed: j a v a c <space> <cmd+v> <space> <shift+8> . j a v a <enter> l s <enter> (<cmd+v> refers to pasting this: -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar)
 
 And finally, we show that there are errors in the tests using the `java` command:
 
 ![Image](failure.png)
 
-Keys pressed: java<space><cmd+v><space><shift+l>ist<shift+e>xamples<shift+t>ests<enter> (<cmd+v> refers to pasting this: -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore)
+Keys pressed: j a v a <space> <cmd+v> <space> <shift+l> i s t <shift+e> x a m p l e s <shift+t> e s t s <enter> (<cmd+v> refers to pasting this: -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore)
 
 ## Step 4
 
@@ -54,4 +54,37 @@ After pressing enter, this is what the terminal should look like:
   
 ![Image](editListExamples.png)
   
-Keys pressed: vim<space><shift+l>ist<shift+e>xamples.java<enter>
+Keys pressed: v i m <space> <shift+l> i s t <shift+e> x a m p l e s . j a v a <enter>
+
+Now, type `/index1`, and press enter. What this does is that it searches through the file for the keyword `index1`. Then, do the following:
+1. Press n 9 times. This get us to the second occurence of `index1` in the third while loop. 
+2. Press l 5 times. This moves the cursor to the right 5 times. 
+3. Press x 1 time. This deletes the last character off of `index1`, so it should be `index` after x is pressed.
+4. Press i 1 time. This enters `Insert` mode in vim.
+5. Press 2 1 time. This types out "2". 
+  
+What we essentially did was change `index1` to `index2` in the third while loop (not the index1 that's commented). This is the main reason why there was a failure during testing. Here's what `ListExamples.java` should look like after the above steps:
+
+![Image](edits.png)
+
+Now, let's exit out of `vim` mode. Press escape, then type in ":wq" and press enter. This should get us back to the terminal. 
+
+## Step 5
+
+Let's try running the tests again: 
+
+![Image](success.png)
+
+Keys pressed: <up>(5x) <enter> <up>(3x) <enter> (Note: Things did not go perfectly when I ran the steps myself and I typed in a number of commands in between the commands discussed in this lab report. When using the up arrow, press it as many times as necessary until you see the `javac` and `java` command as seen in step 3. Run the `javac` command first, then the `java` command.)
+
+Nice! There are no failures. 
+
+## Step 6
+
+Now, it's time to commit and push our code to the GitHub account. For the git command, type `git commit -m "[message]"`. In this case, `[message]` will be `updated`:
+
+![Image](gitcommit.png)
+
+After the message pops up, type in `git push <URL> main`, where URL is the link to your repository. In this case, I will use https://github.com/jontruong05/lab7.git: 
+
+![Image](gitpush.png)
