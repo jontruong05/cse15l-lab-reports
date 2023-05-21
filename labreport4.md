@@ -45,3 +45,13 @@ And finally, we show that there are errors in the tests using the `java` command
 Keys pressed: java<space><cmd+v><space><shift+l>ist<shift+e>xamples<shift+t>ests<enter> (<cmd+v> refers to pasting this: -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore)
 
 ## Step 4
+
+Not to worry, we can fix the issue by editing the file directly from the terminal! It turns out that the issue is in the `ListExamples.java` file. To get into that file, first type "vim ListExamples.java":
+
+![Image](vim_command.png)
+
+After pressing enter, this is what the terminal should look like:
+  
+![Image](editListExamples.png)
+  
+Keys pressed: vim<space><shift+l>ist<shift+e>xamples.java<enter>
