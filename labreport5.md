@@ -46,4 +46,4 @@ java File Two words
 java File Computer science seems pretty cool
 ```
 
-The "TA" gave a hint that `args[]` of length smaller than 3 may have not been considered, which leads to the `IndexOutOfBoundsException` errors. To fix this, simply add an `if` statement before the `for` loop to check for the length of `args[]`. If it is less than 3, then it should be processed differently than if it were of length 3 or greater. 
+The "TA" gave a hint that `args[]` of length smaller than 3 may have not been considered, which leads to the `IndexOutOfBoundsException` errors. To fix this, simply add an `if` statement before the `for` loop to check for the length of `args[]`. If it is less than 3, then it should be processed differently than if it were of length 3 or greater. Some print statements of newline characters were also added for the sake of making the output look neater. 
