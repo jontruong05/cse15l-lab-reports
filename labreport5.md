@@ -6,9 +6,9 @@ Student: I'm trying to write a program that prints out at most 3 arguments from 
 
 Here are screenshots of my file structure, my Java source code called `File.java`, and a bash script called `script.sh`:
 
-![Image](originalFile)
+![Image](originalFile.png)
 
-![Image](bashScript)
+![Image](bashScript.png)
 
 ---
 
@@ -18,7 +18,7 @@ TA: The issue might not be the for loop itself, but rather a consideration you m
 
 Student: Oh, I see the problem. It looks like the for loop is good at considering `args[]` of length 3 or more, but it's not great for when it's smaller than length 3. That's why I'm getting the `IndexOutOfBoundExceptions`. I've added an `if` statement to consider that case, along with code to process `args[]` when it has a length smaller than 3. I've also added some print statements for new lines to make the output look nicer: 
 
-![Image](updatedFile)
+![Image](updatedFile.png)
 
 ## Setup Information
 
